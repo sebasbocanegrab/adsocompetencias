@@ -15,7 +15,6 @@ body {
 .container-h1 {
     /* bordes */
     border-top: 3px solid #CCFF00;
-    border-bottom: 3px solid #f1f1f1;
     background-color: #00183A;
     width: 100%;
     padding: 0.7em;

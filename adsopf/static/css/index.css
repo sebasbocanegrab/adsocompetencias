@@ -2,46 +2,57 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: 'Work Sans', Courier, monospace;
-    /* 00324D */
-    background-color: #EDEDCC;
 }
-
-.container-h1 {
-    border-bottom: #EDEDCC;
-    border: 0.05em;
+/*--------- header ---*/
+.header {
     background-color: #39A900;
     width: 100%;
-    padding: 0.7em;
-    height: 2.5em;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    justify-content:left;
+    align-items: center;
 }
 
-h1 {
-    margin: 0em 3em;
-    font-size: 2em;
-    font-weight: 700;
-    color: #fff;
-    border-radius: 0.6em;
-    -webkit-border-radius: 0.6em;
-    -moz-border-radius: 0.6em;
-    -ms-border-radius: 0.6em;
-    -o-border-radius: 0.6em;
+.header__h1 {
+    color: white;
+    margin: 0 100px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/*---- main ---*/
+
+.main {
+    padding-top: 70px;
     width: 100%;
-}
-
-ul {
-    margin: 1em 1em;
-}
-
-.container-list {
+    display: flex;
     background-color: #EDEDCC;
-    margin: 0em 0em;
 }
 
-li {
+
+.ul {
+    margin: 20px 100px;
+}
+
+.li {
+    margin: 10px 0 0 0;
+}
+
+.li__a {
+    color: #00324D;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+/* li {
     list-style: none;
-    /* list-style: square inside; */
+    /* list-style: square inside;
 }
 ul li a {
     font-weight: 400;
@@ -54,4 +65,4 @@ ul li a {
 ul li a:hover {
     color: #fff;
     background-color: #142823;
-}
+} */

@@ -18,22 +18,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
-    <!-- <h1>INFORMACION BÁSICA DEL PROGRAMA DE FORMACION TITULADA</h1> -->
-    <div class="container-h1">
-        <h1>Competencias tecnología académica ADSO:</h1>
-    </div>
-
-    <div class="container-list">
-        {% if menu %} 
-        <ul>
-            {% for competencia in competencias %}
-            <li>
-                <a href="{% url 'detalle_competencia' competencia.id %}">{{ competencia.nombre }}</a>
-            </li>
-            {% endfor %}
-        </ul>
-        {% endif %} 
-    </div>
-
+    <header class="header">
+            <h1 class="header__h1">Competencias: Ánalisis y Desarrollo de Software</h1>
+    </header>
+    <main class="main">
+            {% if menu %} 
+            <ul class="ul" >
+                {% for competencia in competencias %}
+                <li class="li">
+                    <a href="{% url 'detalle_competencia' competencia.id %}" class="li__a">{{ competencia.nombre }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %} 
+    </main>
 </body>
 </html>
